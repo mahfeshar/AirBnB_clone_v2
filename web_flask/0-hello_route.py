@@ -1,10 +1,16 @@
 #!/usr/bin/python3
 from flask import Flask
+"""Script for Flask Web applictaioon"""
 
 app = Flask(__name__)
 
 @app.route("/", strict_slashes=False)
 def index():
+    """Function for the main webpage
+
+    Returns:
+        string: display message
+    """
     return "Hello HBNB!"
 
 if __name__ == "__main__":
